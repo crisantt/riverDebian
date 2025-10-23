@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # wlroots build
-mkdir -p "$HOME/Git"
 cd "$HOME/Git" || exit
 sleep 3
 git clone https://gitlab.freedesktop.org/wlroots/wlroots.git
