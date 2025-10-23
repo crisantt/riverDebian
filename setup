@@ -57,11 +57,16 @@ sudo apt install libxcb-render-util0 libxcb-render-util0-dev libxcb-errors-dev l
 # wlroots build
 mkdir -p "$HOME/Git"
 cd "$HOME/Git" || exit
+sleep 3
 git clone https://gitlab.freedesktop.org/wlroots/wlroots.git
 cd "$HOME/Git/wlroots" || exit
+sleep 3
 meson setup build/
+sleep 3
 ninja -C build/
+sleep 3
 sudo ninja -C build/ install
+sleep 3
 
 # River Dependencies
 sudo apt install libevdev-dev libevdev-doc libevdev-tools libevdev2 libevdev2-udeb
@@ -71,4 +76,4 @@ sudo apt install libpkgconf-dev libpkgconf3 pkg-config pkgconf pkgconf-bin scdoc
 sudo apt install qt6-wayland 
 
 # User Packages
-sudo apt install foot
+sudo apt install foot wget curl
