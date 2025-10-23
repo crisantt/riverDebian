@@ -56,8 +56,11 @@ sudo apt install \
 # libxcb util and errors
 sudo apt install libxcb-render-util0 libxcb-render-util0-dev libxcb-errors-dev libxcb-errors0
 
+# Wayland-build
+bash "$HOME/Git/scripts/wayland"
+
 # wlroots build
-bash ~/Git/riverDebian/scipts/wlroots
+bash "$HOME/Git/riverDebian/scipts/wlroots"
 
 # River Dependencies
 sudo apt install libevdev-dev libevdev-doc libevdev-tools libevdev2
