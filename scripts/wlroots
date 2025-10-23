@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# wlroots build
+mkdir -p "$HOME/Git"
+cd "$HOME/Git" || exit
+sleep 3
+git clone https://gitlab.freedesktop.org/wlroots/wlroots.git
+cd "$HOME/Git/wlroots" || exit
+sleep 3
+meson setup build/
+sleep 3
+ninja -C build/
+sleep 3
+sudo ninja -C build/ install
+sleep 3
