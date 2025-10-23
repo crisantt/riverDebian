@@ -2,9 +2,9 @@
 
 # Build Wayland from source
 sudo apt install libffi8 libffi-dev libxml2-dev libxml2 doxygen graphviz
-cd "$HOME/Git/"
+cd "$HOME/Git/" || exit
 git clone https://gitlab.freedesktop.org/wayland/wayland
-cd wayland
+cd "$HOME/Git/wayland/" || exit
 mkdir -p "$HOME/.local/"
 meson build/ --prefix="$HOME/.local/"
 ninja -C build/ install
