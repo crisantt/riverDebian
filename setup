@@ -61,9 +61,13 @@ mkdir -p "$HOME/Git"
 
 # Wayland-build
 bash "$HOME/Git/scripts/wayland"
+echo " WAYLAND BUILD SUCCESS "
+sleep 5
 
 # wlroots build
 bash "$HOME/Git/riverDebian/scipts/wlroots"
+echo " WLROOTS BUILD SUCCESS "
+sleep 5
 
 # River Dependencies
 sudo apt install libevdev-dev libevdev-doc libevdev-tools libevdev2
