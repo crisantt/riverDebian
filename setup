@@ -56,6 +56,9 @@ sudo apt install \
 # libxcb util and errors
 sudo apt install libxcb-render-util0 libxcb-render-util0-dev libxcb-errors-dev libxcb-errors0
 
+# Creates a Git directory
+mkdir -p "$HOME/Git"
+
 # Wayland-build
 bash "$HOME/Git/scripts/wayland"
 
